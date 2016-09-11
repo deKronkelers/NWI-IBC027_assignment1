@@ -1,8 +1,10 @@
 /**
- * Find an element whose value equals its index in O(log n) where n is the length of the array.
+ * Find an element whose value equals its index in O(log n) where n is
+ * the length of the array.
  *
  * @param ints a sorted array of distinct integers
- * @return the index of an element whose value equals its index or -1 of no such element exists
+ * @return the index of an element whose value equals its index or -1
+ * if no such element exists.
  * @author Hendrik Werner
  * @author Constantin Blach
  */
