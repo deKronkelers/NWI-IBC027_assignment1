@@ -7,6 +7,7 @@
  * @param to where to stop searching
  * @return whether a contains an elements whose value equals its index
  * in the specified range
+ * @author Hendrik Werner
  */
 boolean containsKeyEqualsValue(int[] a, int from, int to) {
     if (from == to) {
