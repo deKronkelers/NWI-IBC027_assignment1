@@ -6,6 +6,7 @@
  * @param n the second sorted array
  * @param k
  * @return the kth-smallest element in the union of m and n
+ * @author Hendrik Werner
  */
 int findKthSmallest(int[] m, int[] n, int k) {
 
