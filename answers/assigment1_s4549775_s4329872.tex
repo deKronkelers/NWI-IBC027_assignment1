@@ -109,6 +109,16 @@ The constant is 4 operations: $c = 4$
 \end{enumerate}
 
 \subsection{} %1.6
+It's clear that you need to throw away some fraction of the arrays on each iteration to achieve $O(\log n + \log m)$ time complexity where $m, n$ are the respective sizes of the two arrays.
+
+We thought about ignoring all $m[i]$ and $n[i]$ where $i < k$ and also where $i > k$ however both won't work:
+\begin{itemize}
+	\item You cannot ignore all $i < k$ because the $k$th smallest element in the union of $m$ and $n$ could be at $m[a]$ or $n[a], a < k$.
+	\item You also cannot ignore all $i > k$ because the arrays my contain duplicates. This means the $k$th smallest element could be at $m[a]$ or $n[a], a > k$.
+\end{itemize}
+
+This means you probably have to compare some elements of $m$ and $n$ and reduce them using that somehow. We were not able to figure it out and could only produce the following:
+
 \lstinputlisting{code/findKthSmallest.groovy}
 
 \subsection{} %1.7
